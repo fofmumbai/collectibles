@@ -111,15 +111,4 @@ sr.reveal(`.share__data, .join__img`, {
     origin: 'right'
 })
 
-// Loader animation
-document.addEventListener("DOMContentLoaded", function() {
-    const loader = document.querySelector('.loader');
-    const mainContent = document.querySelector('.share.section.bd-container');
-
-    setTimeout(() => {
-        loader.style.display = 'none';
-        mainContent.style.display = 'block';
-    }, 4000); // Wait for 4 seconds to match the loader animation duration
-});
-
 
