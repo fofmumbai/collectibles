@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="1.css">
+    <link rel="preload" href="1.css" as="style">
+    <link rel="preload" href="1.js" as="script">
     <title>DZN X DEV</title>
 </head>
 <body>
-    <section class="share section bd-container" id="share">
+    <!--========== LOADER ==========-->
+    <div class="loader">
+        <img src="https://ik.imagekit.io/kuchbhikunal2/loader.svg" class="loader-image">
+    </div>
+
+    <section class="share section bd-container" id="share" style="display: none;">
         <div class="share__container bd-grid">
             <div class="share__data">
                 <h2 class="section-title-center">DZN X DEV</h2>
@@ -16,9 +24,12 @@
             </div>
 
             <div class="share__img stamp">
-                <img src="/assets/img/1.svg" alt="">
+                <img id="stampImage" src="/assets/img/1.svg" alt="">
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="1.js"></script>
+    <script src="loader.js"></script>
 </body>
 </html>
